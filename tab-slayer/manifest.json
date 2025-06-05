@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Slayer",
+  "short_name": "Tab Slayer",
+  "version": "1.0",
+  "description": "Closes in-active and up-pinned tabs older than 2 days.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Slayer"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Tab Cleaner</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <h1>
+    <span class="material-icons">gavel</span>
+    Tab Slayer
+  </h1>
+  
+  <div class="section">
+    <div class="section">
+      <label>Total Managed Tabs: <span id="totalManagedTabsLabel">0</span></label>
+    </div>
+    <div class="section">
+      <label for="timeoutSlider">Timeout: <span id="timeoutLabel">2</span> day(s)</label>
+      <input type="range" min="1" max="7" id="timeoutSlider" value="2" />
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Tabs Closing Soon (Next 24h)</h2>
+    <ul id="closingSoonList"></ul>
+  </div>
+  
+  <div class="section">
+    <h2>Recently Closed Tabs</h2>
+    <ul id="recentlyClosedList"></ul>
+  </div>
+  
+</body>
+<script src="./popup.js"></script>
+</html>
